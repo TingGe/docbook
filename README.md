@@ -1,27 +1,27 @@
 XMLmind免费的XML编辑器
 ================
 
-[下载][12]
+[下载][1]
 
-[12]: <http://www.xmlmind.com/xmleditor/download.shtml>
+[1]: <http://www.xmlmind.com/xmleditor/download.shtml>
 
 使用
 --
 
-[XMLmind XML编辑器——官网首页教程][13]
+[XMLmind XML编辑器——官网首页教程][2]
 
-[13]: <http://www.xmlmind.com/xmleditor/_primer/xxe_primer.swf>
+[2]: <http://www.xmlmind.com/xmleditor/_primer/xxe_primer.swf>
 
-[XMLmind XML编辑器——在线帮助][1]
+[XMLmind XML编辑器——在线帮助][3]
 
-[1]: <http://wenku.it168.com/d_000553069.shtml>
+[3]: <http://www.xmlmind.com/xmleditor/_distrib/doc/help/wh/index.html>
 
 参考
 --
 
-[在路上][14]
+[在路上][4]
 
-[14]: <http://www.crifan.com/category/work_and_job/docbook/>
+[4]: <http://www.crifan.com/category/work_and_job/docbook/>
 
 
 
@@ -63,46 +63,46 @@ http://code.google.com/p/zoeeydoc/
 
 +--------+----------+----------------+----------------+
 
-| chm    | [chm][4] | [checksum][8]  | 无法查看：文件属性，解除锁定 |
+| chm    | [chm][5] | [checksum][9]  | 无法查看：文件属性，解除锁定 |
 
 +--------+----------+----------------+----------------+
 
-| html   | [zip][5] | [checksum][9]  |                |
+| html   | [zip][6] | [checksum][10]  |                |
 
 +--------+----------+----------------+----------------+
 
-| pdf    | [pdf][6] | [checksum][10] |                |
+| pdf    | [pdf][7] | [checksum][11] |                |
 
 +--------+----------+----------------+----------------+
 
-| single | [zip][7] | [checksum][11] |                |
+| single | [zip][8] | [checksum][12] |                |
 
 +--------+----------+----------------+----------------+
 
-[4]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.chm>
+[5]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.chm>
 
-[5]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.zip>
+[6]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.zip>
 
-[6]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.pdf>
+[7]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.pdf>
 
-[7]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc-single.zip>
+[8]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc-single.zip>
 
-[8]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.chm.checksum>
+[9]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.chm.checksum>
 
-[9]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.zip.checksum>
+[10]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.zip.checksum>
 
-[10]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.pdf.checksum>
+[11]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc.pdf.checksum>
 
-[11]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc-single.zip.checksum>
+[12]: <http://zoeeydoc.googlecode.com/hg/build/zoeeydoc-single.zip.checksum>
 
 示例项目
 ----
 
-<http://code.google.com/p/cnphpdocs/> 【含文档源码、各格式下载】
+http://code.google.com/p/cnphpdocs/ 【含文档源码、各格式下载】
 
-<http://code.google.com/p/yafphp/> 【含文档源码】
+http://code.google.com/p/yafphp/ 【含文档源码】
 
-<http://code.google.com/p/zoeeyphp/> 【含文档源码、各格式下载】
+http://code.google.com/p/zoeeyphp/ 【含文档源码、各格式下载】
 
 使用说明
 ----
@@ -127,36 +127,29 @@ http://code.google.com/p/zoeeydoc/
 参考资料
 ----
 
-[DocBook][1]  
+[DocBook][13]  
   
-[DocBook XSL: The Complete Guide][2]  
+[DocBook XSL: The Complete Guide][14]  
   
-[ZoeeyDoc 使用技巧][3]
+[ZoeeyDoc 使用技巧][15]
 
-[1]: <http://www.docbook.org/>
+[13]: <http://www.docbook.org/>
 
-[2]: <http://www.sagehill.net/docbookxsl/index.html>
+[14]: <http://www.sagehill.net/docbookxsl/index.html>
 
-[3]: <http://blog.zoeey.org/2011/03/12/zoeeydoc-docbook/>
+[15]: <http://blog.zoeey.org/2011/03/12/zoeeydoc-docbook/>
 
 其它
 --
 
-java运行所需要的Jre：[Jre][1]
+java运行所需要的Jre：[Jre][16]
 
-[1]: <http://www.java.com/en/download/index.jsp>
+[16]: <http://www.java.com/en/download/index.jsp>
 
-chm生成需要的hhc:[Microsoft HTML Help Downloads][2]
+chm生成需要的hhc:[Microsoft HTML Help Downloads][17]
 
-[2]: <http://msdn.microsoft.com/en-us/library/ms669985%28v=vs.85%29.aspx>
+[17]: <http://msdn.microsoft.com/en-us/library/ms669985%28v=vs.85%29.aspx>
 
-java运行所需要的Jre：[Jre][1]
-
-[1]: <http://www.java.com/en/download/index.jsp>
-
-chm生成需要的hhc:[Microsoft HTML Help Downloads][2]
-
-[2]: <http://msdn.microsoft.com/en-us/library/ms669985%28v=vs.85%29.aspx>
 
 ZoeeyDoc作者
 ----------
