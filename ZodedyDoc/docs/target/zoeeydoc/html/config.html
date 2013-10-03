@@ -1,0 +1,81 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><title>2.2.&nbsp;配置文件</title><link href="css/styles.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator"><link rel="home" href="index.html" title="ZoeeyDoc 用户手册"><link rel="up" href="manual.html" title="第&nbsp;2&nbsp;章&nbsp;使用说明"><link rel="prev" href="manual.html" title="第&nbsp;2&nbsp;章&nbsp;使用说明"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table summary="Navigation header" width="100%"><tr><th align="center" colspan="3">2.2.&nbsp;配置文件</th></tr><tr><td align="left" width="20%"><a accesskey="p" href="manual.html">上一页</a>&nbsp;</td><th align="center" width="60%">第&nbsp;2&nbsp;章&nbsp;使用说明</th><td align="right" width="20%">&nbsp;</td></tr></table><hr></div><div class="section" title="2.2.&nbsp;配置文件"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="config"></a>2.2.&nbsp;配置文件</h2></div></div></div>
+    
+
+    <p>文档项目下config.kv 文件为项目配置文件。</p>
+
+    <div class="example"><a name="N2013B"></a><p class="title"><b>例&nbsp;2.1.&nbsp;生成single-html的配置</b></p><div class="example-contents">
+      
+
+      <pre class="programlisting"># single html
+
+single.in = "docs/books/zoeeydoc/userguide.xml"                主文档，一般为 book。
+single.xsl = "docs/books/zoeeydoc/xsl/single/htmlsingle.xsl"   xsl转换定义文件，其引入docbook-xsl
+single.file = "docs/target/zoeeydoc/single/userguide.html"     输出目标文件
+single.outdir = "docs/target/zoeeydoc/single/"                 输出目标文件夹
+single.zip = "docs/target/zoeeydoc/single/zoeeydoc.zip"        压缩文件文件名
+single.header = "docs/books/zoeeydoc/xsl/single/header.html"   在输出的html中，在generator后自动填充的内容
+# 文件拷贝
+single.copy[image] = "docs/books/zoeeydoc/images"
+single.target[image] = "docs/target/zoeeydoc/single/images"
+single.copy[css] = "docs/books/zoeeydoc/css/single"
+single.target[css] = "docs/target/zoeeydoc/single/css"</pre>
+    </div></div><br class="example-break">
+
+    <div class="example"><a name="N20144"></a><p class="title"><b>例&nbsp;2.2.&nbsp;生成html的配置</b></p><div class="example-contents">
+      
+
+      <pre class="programlisting"># html
+
+html.in = "docs/books/zoeeydoc/userguide.xml"            主文档，一般为 book。
+html.xsl = "docs/books/zoeeydoc/xsl/html/html.xsl"       xsl转换定义文件，其引入docbook-xsl
+html.outdir = "docs/target/zoeeydoc/html"                输出目标文件夹
+html.zip = "docs/target/zoeeydoc/html/zoeeydoc.zip"      压缩文件文件名
+html.header = "docs/books/zoeeydoc/xsl/html/header.html" 在输出的html中，在generator后自动填充的内容
+# 文件拷贝
+html.copy[image] = "docs/books/zoeeydoc/images"
+html.target[image] = "docs/target/zoeeydoc/html/images"
+html.copy[css] = "docs/books/zoeeydoc/css/html"
+html.target[css] = "docs/target/zoeeydoc/html/css"</pre>
+    </div></div><br class="example-break">
+
+    <div class="example"><a name="N2014D"></a><p class="title"><b>例&nbsp;2.3.&nbsp;生成chm的配置</b></p><div class="example-contents">
+      
+
+      <pre class="programlisting"># chm
+
+chm.in = "docs/books/zoeeydoc/userguide.xml"            主文档，一般为 book。
+chm.xsl = "docs/books/zoeeydoc/xsl/chm/chm.xsl"         xsl转换定义文件，其引入docbook-xsl
+chm.outdir = "docs/target/zoeeydoc/chm"                 输出目标文件夹
+chm.header = "docs/books/zoeeydoc/xsl/chm/header.html"  在输出的html中，在generator后自动填充的内容
+# hhc.exe 的路径
+chm.hhc =  "C:/Program Files/HTML Help Workshop/hhc.exe"
+# 文件拷贝
+chm.copy[image] = "docs/books/zoeeydoc/images"
+chm.target[image] = "docs/target/zoeeydoc/chm/images"
+chm.copy[css] = "docs/books/zoeeydoc/css/html"
+chm.target[css] = "docs/target/zoeeydoc/chm/css"</pre>
+    </div></div><br class="example-break">
+
+    <div class="warning" title="警告" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Warning"><tr><td valign="top" align="center" rowspan="2" width="25"><img alt="[警告]" src="images/warning.gif"></td><th align="left">警告</th></tr><tr><td valign="top" align="left">
+      <p>hhc.exe的路径为绝对路径，请依照自身的情况进行修改。</p>
+
+      <p>下载 hhc： <a class="ulink" href="???" target="_top">Microsoft HTML Help
+      Downloads</a></p>
+    </td></tr></table></div>
+
+    <div class="example"><a name="N20162"></a><p class="title"><b>例&nbsp;2.4.&nbsp;生成pdf的配置</b></p><div class="example-contents">
+      
+
+      <pre class="programlisting"># single html
+
+pdf.outdir = "docs/target/zoeeydoc/pdf/"            输出目标文件夹
+pdf.fop = "docs/books/zoeeydoc/xsl/pdf/fop.xml"     输入fop配置文件（字体设置在内）
+pdf.in = "docs/books/zoeeydoc/userguide.xml"        主文档，一般为 book
+pdf.xsl = "docs/books/zoeeydoc/xsl/pdf/pdf.xsl"     xsl转换定义文件，其引入docbook-xsl
+pdf.pdf = "docs/target/zoeeydoc/pdf/zoeeydoc.pdf"   输出目标文件
+
+# 文件拷贝
+pdf.copy[fonts.georgia] = "%SystemRoot%/Fonts/georgia.ttf"      %SystemRoot% 为系统变量 SystemRoot
+pdf.target[fonts.georgia] = "docs/zips/cache/fonts/georgia.ttf" 拷贝到fonts文件夹下的ttf字体将会被自动生成描述文件</pre>
+    </div></div><br class="example-break">
+  </div><div class="navfooter"><hr><table summary="Navigation footer" width="100%"><tr><td align="left" width="40%"><a accesskey="p" href="manual.html">上一页</a>&nbsp;</td><td align="center" width="20%"><a accesskey="u" href="manual.html">上一级</a></td><td align="right" width="40%">&nbsp;</td></tr><tr><td valign="top" align="left" width="40%">第&nbsp;2&nbsp;章&nbsp;使用说明&nbsp;</td><td align="center" width="20%"><a accesskey="h" href="index.html">起始页</a></td><td valign="top" align="right" width="40%">&nbsp;</td></tr></table></div></body></html>

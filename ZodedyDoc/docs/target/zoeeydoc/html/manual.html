@@ -1,0 +1,69 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><title>第&nbsp;2&nbsp;章&nbsp;使用说明</title><link href="css/styles.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator"><link rel="home" href="index.html" title="ZoeeyDoc 用户手册"><link rel="up" href="index.html" title="ZoeeyDoc 用户手册"><link rel="prev" href="quickstart.html" title="第&nbsp;1&nbsp;章&nbsp;快速入门"><link rel="next" href="config.html" title="2.2.&nbsp;配置文件"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table summary="Navigation header" width="100%"><tr><th align="center" colspan="3">第&nbsp;2&nbsp;章&nbsp;使用说明</th></tr><tr><td align="left" width="20%"><a accesskey="p" href="quickstart.html">上一页</a>&nbsp;</td><th align="center" width="60%">&nbsp;</th><td align="right" width="20%">&nbsp;<a accesskey="n" href="config.html">下一页</a></td></tr></table><hr></div><div lang="zh_CN" class="chapter" title="第&nbsp;2&nbsp;章&nbsp;使用说明"><div class="titlepage"><div><div><h2 class="title"><a name="manual"></a>第&nbsp;2&nbsp;章&nbsp;使用说明</h2></div></div></div>
+  
+
+  <div class="section" title="2.1.&nbsp;目录与文件"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N20114"></a>2.1.&nbsp;目录与文件</h2></div></div></div>
+    
+
+    <pre class="programlisting">ZoeeyDoc\ 
+│ README.TXT
+│ ZoeeyDoc.jar                           主执行文件
+├─docs
+│ ├─books                              文档总目录
+│ │ └─zoeeydoc                       文档项目
+│ │   │ config.kv                  <a class="link" href="config.html" title="2.2.&nbsp;配置文件">配置文件</a>
+│ │   │ copyright.xml
+│ │   │ glossary.xml
+│ │   │ manual.xml
+│ │   │ quickstart.xml
+│ │   │ userguide.xml
+│ │   ├─build                       发布时，建议存储文档的目录
+│ │   ├─css                         各格式CSS样式目录
+│ │   │ ├─html 
+│ │   │ └─single 
+│ │   ├─images                      图片目录
+│ │   └─xsl                         生成各所需样式和设置
+│ │     ├─chm                     <a class="link" href="manual.html#chm.name.set" title="设置chm文件名">设置chm文件名</a>
+│ │     ├─html 
+│ │     ├─pdf 
+│ │     ├─single 
+│ │     ├─site 
+│ │     └─wiki 
+│ ├─target                              生成文件目录
+│ │ └─zoeeydoc                        项目名
+│ │   └─chm                         生成格式
+│ │     │ htmlhelp.hhp
+│ │     │ htmlhelp.hhp.log
+│ │     │ index.hhk
+│ │     │ index.html
+│ │     │ quickstart.html
+│ │     │ task.list.html
+│ │     │ toc.hhc
+│ │     │ zoeeydoc.chm            目标文件
+│ │     │ zoeeydoc.chm.checksum   校验文件
+│ │     ├─css 
+│ │     └─images 
+│ └─zips                                打包的字体与xsl
+│   │ docbook-xsl.zip                 生成样式
+│   │ Docbook2Wiki.zip                wiki样式
+│   │ fonts.zip                       pdf嵌入字体
+│   │ readme.txt                      当前目录注意项
+│   └─cache                           缓存目录        
+└─lib                                     依赖库
+
+</pre>
+
+    <div class="simplesect" title="设置chm文件名"><div class="titlepage"><div><div><h3 class="title"><a name="chm.name.set"></a>设置chm文件名</h3></div></div></div>
+      
+
+      <p>文档项目下 xsl/chm 文件夹内的 chm-style.xsl 文件。</p>
+
+      <pre class="programlisting">&lt;xsl:param name="htmlhelp.chm"&gt;zoeeydoc.chm&lt;/xsl:param&gt;
+
+修改为生成 example.chm 则为：
+
+&lt;xsl:param name="htmlhelp.chm"&gt;example.chm&lt;/xsl:param&gt; </pre>
+    </div>
+  </div>
+
+  
+</div><div class="navfooter"><hr><table summary="Navigation footer" width="100%"><tr><td align="left" width="40%"><a accesskey="p" href="quickstart.html">上一页</a>&nbsp;</td><td align="center" width="20%">&nbsp;</td><td align="right" width="40%">&nbsp;<a accesskey="n" href="config.html">下一页</a></td></tr><tr><td valign="top" align="left" width="40%">第&nbsp;1&nbsp;章&nbsp;快速入门&nbsp;</td><td align="center" width="20%"><a accesskey="h" href="index.html">起始页</a></td><td valign="top" align="right" width="40%">&nbsp;2.2.&nbsp;配置文件</td></tr></table></div></body></html>

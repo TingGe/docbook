@@ -1,0 +1,79 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><title>第&nbsp;1&nbsp;章&nbsp;快速入门</title><link href="css/styles.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.75.2 / ZoeeyDoc http://zoeeydoc.googlecode.com " name="generator"><link rel="home" href="index.html" title="ZoeeyDoc 用户手册"><link rel="up" href="index.html" title="ZoeeyDoc 用户手册"><link rel="prev" href="task.list.html" title="项目介绍"><link rel="next" href="manual.html" title="第&nbsp;2&nbsp;章&nbsp;使用说明"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table summary="Navigation header" width="100%"><tr><th align="center" colspan="3">第&nbsp;1&nbsp;章&nbsp;快速入门</th></tr><tr><td align="left" width="20%"><a accesskey="p" href="task.list.html">上一页</a>&nbsp;</td><th align="center" width="60%">&nbsp;</th><td align="right" width="20%">&nbsp;<a accesskey="n" href="manual.html">下一页</a></td></tr></table><hr></div><div lang="zh-CN" class="chapter" title="第&nbsp;1&nbsp;章&nbsp;快速入门"><div class="titlepage"><div><div><h2 class="title"><a name="quickstart"></a>第&nbsp;1&nbsp;章&nbsp;快速入门<a name="N200B2" class="indexterm"></a></h2></div></div></div>
+  
+
+  <p>ZoeeyDoc.Jar 运行参数说明<a name="N200BA" class="indexterm"></a></p>
+
+  <div class="variablelist"><dl><dt><span class="term">-h/--help</span></dt><dd>
+        <p>打印帮助文档</p>
+      </dd><dt><span class="term">-c/--clean</span></dt><dd>
+        <p>清理缓存文件。</p>
+      </dd><dt><span class="term">-t/--type</span></dt><dd>
+        <p>转换目标类型（chm,html,single/singlehtml），默认为 html。</p>
+      </dd><dt><span class="term">-b/--book</span></dt><dd>
+        <p>文档目录。 "config.kv" 为配置文件。</p>
+      </dd></dl></div>
+
+  <p>下面举几个简单的例子。</p>
+
+  <div class="example"><a name="N200F6"></a><p class="title"><b>例&nbsp;1.1.&nbsp;示例</b></p><div class="example-contents">
+    
+
+    <pre class="programlisting"># 获取帮助
+java -jar ZoeeyDoc.jar -h
+
+# 生成 html
+java -jar ZoeeyDoc.jar -b docs/books/zoeeydoc -t html
+
+
+# 生成 single html
+java -jar ZoeeyDoc.jar -b docs/books/zoeeydoc -t single
+
+
+# 生成 chm （需要指定hhc目录）
+java -jar ZoeeyDoc.jar -b docs/books/zoeeydoc -t chm</pre>
+  </div></div><br class="example-break">
+
+  <p>以生成ZoeeyDoc的使用手册为例，在第一次运行时：</p>
+
+  <div class="example"><a name="N20102"></a><p class="title"><b>例&nbsp;1.2.&nbsp;生成zoeeydoc.chm</b></p><div class="example-contents">
+    
+
+    <pre class="programlisting">d:\dist&gt;java -jar ZoeeyDoc.jar -t chm -b docs/books/zoeeydoc
+
+-----------------------------------
+生成类型：Chm
+拷贝文件：
+来源：d:\dist\docs\books\zoeeydoc\images
+目标：d:\dist\docs\target\zoeeydoc\chm\images
+拷贝文件：
+来源：d:\dist\docs\books\zoeeydoc\css\html
+目标：d:\dist\docs\target\zoeeydoc\chm\css
+Cannot find CatalogManager.properties
+file:/d:/dist/docs/zips/cache/docbook-xsl/common/utility.xsl
+; 行号189; 列号16; Note: namesp. cut : stripped namespace before processing
+      ZoeeyDoc
+file:/d:/dist/docs/zips/cache/docbook-xsl/common/utility.xsl
+; 行号189; 列号16; Note: namesp. cut : processing stripped document
+      ZoeeyDoc
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing task.list.html for preface(task.list)
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing index.html for book
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing htmlhelp.hhp
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing toc.hhc
+file:/d:/dist/docs/zips/cache/docbook-xsl/html/chunker.xsl;
+行号98; 列号18; Writing index.hhk
+-----------------------------------
+编译CHM：
+d:\dist\docs\target\zoeeydoc\chm\htmlhelp.hhp
+编译完成。
+-----------------------------------
+zoeeydoc.chm 校验码生成完毕：
+checksum
+md5:710179fccb5941a68face3e3191a3ca7
+sha1:9a057b91347979d2f57db66a2a6ccde452f09023
+-----------------------------------</pre>
+  </div></div><br class="example-break">
+</div><div class="navfooter"><hr><table summary="Navigation footer" width="100%"><tr><td align="left" width="40%"><a accesskey="p" href="task.list.html">上一页</a>&nbsp;</td><td align="center" width="20%">&nbsp;</td><td align="right" width="40%">&nbsp;<a accesskey="n" href="manual.html">下一页</a></td></tr><tr><td valign="top" align="left" width="40%">项目介绍&nbsp;</td><td align="center" width="20%"><a accesskey="h" href="index.html">起始页</a></td><td valign="top" align="right" width="40%">&nbsp;第&nbsp;2&nbsp;章&nbsp;使用说明</td></tr></table></div></body></html>
