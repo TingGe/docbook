@@ -158,3 +158,9 @@ ZoeeyDoc作者
 email: system128@gmail.com
 
 qq: 5943590
+
+ZoeeyDoc 同类工具
+----------
+
+[docbook-ant-tools][18]
+[18]:<https://github.com/xmxsuperstar/docbook-ant-tools>
